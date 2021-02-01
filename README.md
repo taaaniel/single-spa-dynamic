@@ -1,4 +1,5 @@
-# Microfrontend + electron.js DEMO
+# Microfrontend dynamic
+
 
 1. open terminal
 
