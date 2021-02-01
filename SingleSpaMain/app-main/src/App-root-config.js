@@ -11,13 +11,19 @@ import { registerApplication, start } from "single-spa";
 
 registerApplication({
   name: "@App/navbar",
-  app: () => System.import("http://localhost:8001/App-navbar.js"),
+  app: () => System.import("@App/navbar"),
   activeWhen: ["/"]
 });
 
 registerApplication({
-  name: "@app/homepage",
+  name: "@App/homepage",
   app: () => System.import("http://localhost:8002/App-homepage.js"),
+  activeWhen: ["/"]
+});
+
+registerApplication({
+  name: "@App/section",
+  app: () => System.import("http://localhost:8003/App-section.js"),
   activeWhen: ["/"]
 });
 
