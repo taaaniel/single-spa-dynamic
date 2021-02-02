@@ -1,0 +1,19 @@
+[
+    {
+        "name": "@App/navbar",
+        "app": "@App/navbar",
+        "activeWhen": "/"
+    },
+    {
+        "name": "@App/homepage",
+        "app": "http://localhost:8002/App-homepage.js",
+        "activeWhen": "/"
+    },
+    {
+        "name": "@App/section",
+        "app": "http://localhost:8002/App-section.js",
+        "activeWhen": "/"
+    }
+    
+
+]
