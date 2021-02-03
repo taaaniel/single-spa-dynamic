@@ -1,4 +1,7 @@
 import { registerApplication, start } from "single-spa";
+
+
+
 let data = [
   {
       "name": "@App/navbar",
@@ -24,6 +27,8 @@ data.forEach(function(item) {
     activeWhen: [item.activeWhen]
   });
 });
+
+
 
 // registerApplication({
 //   name: "@single-spa/welcome",

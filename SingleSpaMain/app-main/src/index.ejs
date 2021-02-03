@@ -45,7 +45,7 @@
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <% if (isLocal) { %>
+  <!-- <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -58,8 +58,13 @@
       }
     }
   </script>
-  <% } %>
+  <% } %> -->
 
+  <% if (isLocal) { %>
+  <!-- Add importmap.js to add dynamicly import map -->
+  <script src="/importmap.js" ></script>
+
+  <% } %>
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
